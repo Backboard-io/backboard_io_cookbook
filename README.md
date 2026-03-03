@@ -65,6 +65,30 @@ Pick a recipe from the table below, read the doc, copy the code.
 
 **Before you ship, read [Common Pitfalls](docs/00-pitfalls.md)** -- especially the rules on per-user assistant isolation and awaiting memory operations.
 
+### Running Python recipes
+
+From the `recipes/` directory (so `_common` is on the path), with `BACKBOARD_API_KEY` set:
+
+```bash
+cd recipes
+python hello_backboard.py
+```
+
+Other recipes: `python memory_as_storage.py`, `python cross_thread_memory.py`, etc.
+
+### Running TypeScript recipes
+
+TypeScript recipes use the custom client in `recipes/ts_client.ts` and shared helpers in `recipes/ts_common.ts`. No npm package is required — Node 18+ (for `fetch`) and a TypeScript runner.
+
+Set `BACKBOARD_API_KEY`, then from `recipes/` run with your preferred runner:
+
+```bash
+cd recipes
+npx tsx ts_client.ts    # or: npx ts-node ts_client.ts
+```
+
+Recipes 10–13 import from `./ts_client` and optionally `./ts_common`; run with `recipes/` as the working directory so relative imports resolve. For a minimal “hello” using the shared helpers, see the patterns in [Recipe 9](docs/09-ts-client.md) and [ts_common.ts](recipes/ts_common.ts).
+
 ## Recipes
 
 ### Python
@@ -91,6 +115,8 @@ Pick a recipe from the table below, read the doc, copy the code.
 | 13 | Agent Sync | Entity-to-assistant mapping | Intermediate | [doc](docs/13-ts-agent-sync.md) | [code](recipes/ts_agent_sync.ts) |
 
 ## Concepts Quick Reference
+
+For a short glossary of each concept with “see Recipe X” links, see **[Concepts](docs/concepts.md)**.
 
 | Concept | What it is | API |
 |---------|-----------|-----|

@@ -13,6 +13,7 @@ export interface BackboardAssistant {
   assistant_id: string;
   name: string;
   description?: string;
+  system_prompt?: string;
   created_at: string;
 }
 
@@ -55,6 +56,23 @@ export interface BackboardStreamEvent {
   output_tokens?: number;
   total_tokens?: number;
   memory_operation_id?: string;
+}
+
+/** Response from addMessage when stream=false. */
+export interface BackboardMessageResponse {
+  content?: string;
+  status?: string;
+  run_id?: string;
+  memory_operation_id?: string;
+  model_provider?: string;
+  model_name?: string;
+  total_tokens?: number;
+}
+
+/** Response from getMemoryOperationStatus. */
+export interface BackboardMemoryOperationStatus {
+  status: "IN_PROGRESS" | "COMPLETED" | "FAILED";
+  status_message?: string;
 }
 
 // --- Client ---
@@ -216,9 +234,14 @@ export class BackboardClient {
 
   // --- Convenience methods ---
 
-  async createAssistant(name: string, description?: string): Promise<BackboardAssistant> {
+  async createAssistant(
+    name: string,
+    description?: string,
+    systemPrompt?: string
+  ): Promise<BackboardAssistant> {
     const data: Record<string, unknown> = { name };
     if (description) data.description = description;
+    if (systemPrompt) data.system_prompt = systemPrompt;
     return this.request<BackboardAssistant>("POST", "/assistants", { json: data });
   }
 
@@ -232,6 +255,47 @@ export class BackboardClient {
     return this.request<BackboardThread>("POST", `/assistants/${assistantId}/threads`, {
       json: {},
     });
+  }
+
+  /**
+   * Send a message and get a complete response (non-streaming).
+   * Use streamMessage() for SSE streaming.
+   */
+  async addMessage(
+    threadId: string,
+    content: string,
+    options?: {
+      memory?: string;
+      llmProvider?: string;
+      modelName?: string;
+    }
+  ): Promise<BackboardMessageResponse> {
+    const formData: Record<string, string> = {
+      content,
+      stream: "false",
+    };
+    if (options?.memory) formData.memory = options.memory;
+    if (options?.llmProvider) formData.llm_provider = options.llmProvider;
+    if (options?.modelName) formData.model_name = options.modelName;
+
+    return this.request<BackboardMessageResponse>(
+      "POST",
+      `/threads/${threadId}/messages`,
+      { formData }
+    );
+  }
+
+  /**
+   * Poll memory operation status. Use after addMessage(..., memory="Auto")
+   * before relying on the memory in a new thread.
+   */
+  async getMemoryOperationStatus(
+    operationId: string
+  ): Promise<BackboardMemoryOperationStatus> {
+    return this.request<BackboardMemoryOperationStatus>(
+      "GET",
+      `/assistants/memories/operations/${operationId}`
+    );
   }
 
   async addMemory(
