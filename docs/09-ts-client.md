@@ -122,4 +122,7 @@ async *streamMessage(threadId, content, options): AsyncGenerator<BackboardStream
 - **Buffer management.** SSE lines can be split across chunks. The `buffer` pattern accumulates partial lines and processes complete ones.
 - **SyntaxError handling.** Malformed SSE lines are silently skipped. This handles keepalive pings or partial data.
 
+<br />
+<br />
+<br />
 <p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

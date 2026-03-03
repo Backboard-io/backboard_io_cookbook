@@ -139,4 +139,7 @@ See [Pitfall 2](00-pitfalls.md#2-memoryauto-is-asynchronous----you-must-await-it
 - **Don't use for structured data.** Memory is great for user preferences and context. For structured CRUD (todo lists, game saves), use the Memory as Storage pattern (Recipe 2) with explicit `add_memory()` / `get_memories()`.
 - **Memory + folders.** In Nash/LibreChat, folder chats use `memory="Off"` to keep folder conversations isolated. The proxy switches modes based on context.
 
+<br />
+<br />
+<br />
 <p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

@@ -138,4 +138,7 @@ function buildStorableContent(data: Record<string, unknown>): string {
 - **Assistant proliferation.** One assistant per user means lots of assistants. This is fine -- Backboard handles it. But track the mapping (user -> assistant_id) carefully.
 - **Shutdown flush.** On process shutdown, pending flushes should be executed synchronously. Otherwise, data written in the last 3 seconds is lost.
 
+<br />
+<br />
+<br />
 <p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

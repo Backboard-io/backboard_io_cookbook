@@ -147,5 +147,7 @@ This is worth restating separately because it comes up in a different context: y
 | **Shared folder** (`myapp-folder-{id}`) | Depends | Only if all users in the folder should share context |
 
 In Nash/LibreChat, folder chats explicitly set `memory="Off"` when using a shared assistant to prevent cross-user contamination.
-
+<br />
+<br />
+<br />
 <p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

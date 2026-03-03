@@ -122,4 +122,7 @@ assistant_id = await get_or_create_assistant(
 - **Batch carefully.** You can classify multiple items in one prompt, but parsing becomes harder. One item per thread is more reliable.
 - **Token costs add up.** Each classification uses tokens. For high-volume pipelines, consider batching or using the cheapest model that works.
 
+<br />
+<br />
+<br />
 <p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

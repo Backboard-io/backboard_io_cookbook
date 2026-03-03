@@ -74,4 +74,7 @@ A **run** is one LLM execution triggered by a message. It’s identified by `run
 
 See [Recipe 3: Tool Calling](03-tool-calling.md).
 
+<br />
+<br />
+<br />
 <p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

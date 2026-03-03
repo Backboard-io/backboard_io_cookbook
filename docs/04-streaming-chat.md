@@ -93,4 +93,7 @@ async for chunk in await client.add_message(
 - **Memory operations are async.** The `memory_operation_id` in `run_ended` tells you a background memory save is happening. You can poll its status if you need to confirm it completed.
 - **Don't assume one `run_ended`.** In complex flows (tool calls + resume), you may see multiple runs. Each has its own `run_ended`.
 
+<br />
+<br />
+<br />
 <p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

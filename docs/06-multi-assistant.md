@@ -141,4 +141,7 @@ response = await client.add_message(
 - **Assistant IDs must be tracked.** Store them as constants or use `get_or_create_assistant()` to look them up by name.
 - **More assistants = more API calls.** Each assistant is a separate scope. If you need data from multiple assistants, that's multiple `get_memories()` calls.
 
+<br />
+<br />
+<br />
 <p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>
