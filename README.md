@@ -1,3 +1,7 @@
+<p align="right">
+  <a href=".cursor/skills/backboard-app/SKILL.md"><img src="https://img.shields.io/badge/Cursor_Skill-Included-blue?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMiAxNWwtNS01IDEuNDEtMS40MUwxMCAxNC4xN2w3LjU5LTcuNTlMMTkgOGwtOSA5eiIvPjwvc3ZnPg==&style=for-the-badge" alt="Cursor Skill Included"></a>
+</p>
+
 <p align="center">
   <img src="assets/brand.png" alt="Backboard.io" width="300">
 </p>

@@ -129,4 +129,4 @@ print(response.content)
 - **Tool errors are tool outputs.** If a tool fails, return a JSON error message as the output. Don't raise an exception -- let the LLM decide how to handle it.
 - **`run_id` is per-round.** Each `submit_tool_outputs()` uses the `run_id` from the response that triggered it.
 
-<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>
+<p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

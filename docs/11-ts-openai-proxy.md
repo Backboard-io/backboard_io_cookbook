@@ -112,4 +112,4 @@ function buildPromptFromMessages(messages: OpenAIChatMessage[]): string {
 - **Memory mode.** The proxy uses `memory="Auto"` by default. Set to `"Off"` for stateless interactions (e.g. folder-scoped chats in Nash).
 - **Idle timeout.** Nash uses a 1.5s idle timer after the last content token to close the stream, handling cases where `run_ended` is delayed.
 
-<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>
+<p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

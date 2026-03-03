@@ -131,4 +131,4 @@ async function findByMetadata(type, key, value, userId?): Promise<StoredItem | u
 - **Content is a string.** Always `JSON.stringify()` when storing and `JSON.parse()` when reading.
 - **Singleton state.** The cached `client` and `assistantId` persist for the lifetime of the process. In serverless environments, this resets per invocation.
 
-<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>
+<p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

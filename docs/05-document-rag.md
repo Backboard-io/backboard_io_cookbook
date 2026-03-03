@@ -122,4 +122,4 @@ flowchart TD
 - **File size limits.** Check the current limits in the Backboard docs. Very large files may need to be split.
 - **Deleting documents.** Use `delete_document(document_id)` to remove. The document is removed from search results immediately.
 
-<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>
+<p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

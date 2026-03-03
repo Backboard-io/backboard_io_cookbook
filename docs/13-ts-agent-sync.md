@@ -133,4 +133,4 @@ async function createFolder(params: { folderId, name, shared }): Promise<FolderM
 - **Idempotency.** `syncAgentToAssistant()` checks first, creates if missing. Calling it multiple times for the same agent returns the same assistant ID.
 - **Deletion cascade.** When deleting a mapped entity, decide whether to also delete the Backboard assistant. The `deleteAssistant` flag controls this.
 
-<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>
+<p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

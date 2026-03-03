@@ -114,4 +114,4 @@ user_todos = [
 - **Content size limit.** Memory content has a size limit (~50KB). For large objects, split into multiple memories or use documents instead.
 - **IDs change on update.** Since update is delete + create, the memory ID changes. If you cache IDs, update your cache.
 
-<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>
+<p align="center" style="padding-top: 2em; padding-bottom: 2em;"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>
