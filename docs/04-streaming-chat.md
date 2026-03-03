@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 4: Streaming Chat
 
 > **Python** | **Intermediate** | [View Code](../recipes/streaming_chat.py)
@@ -90,3 +92,5 @@ async for chunk in await client.add_message(
 - **Streaming + tools.** When streaming a tool-calling assistant, you get `tool_submit_required` events instead of `REQUIRES_ACTION` status. The `tool_calls` are in the event payload. See the SDK docs for the streaming tool-call pattern.
 - **Memory operations are async.** The `memory_operation_id` in `run_ended` tells you a background memory save is happening. You can poll its status if you need to confirm it completed.
 - **Don't assume one `run_ended`.** In complex flows (tool calls + resume), you may see multiple runs. Each has its own `run_ended`.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

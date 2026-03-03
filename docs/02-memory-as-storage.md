@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 2: Memory as App Storage
 
 > **Python** | **Beginner** | [View Code](../recipes/memory_as_storage.py)
@@ -111,3 +113,5 @@ user_todos = [
 - **Update is not atomic.** The delete-then-create pattern means there's a brief window where the data doesn't exist. In production, create the new memory first, then delete the old one (write-first pattern) to avoid data loss.
 - **Content size limit.** Memory content has a size limit (~50KB). For large objects, split into multiple memories or use documents instead.
 - **IDs change on update.** Since update is delete + create, the memory ID changes. If you cache IDs, update your cache.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 5: Document RAG
 
 > **Python** | **Intermediate** | [View Code](../recipes/document_rag.py)
@@ -119,3 +121,5 @@ flowchart TD
 - **No partial results.** A document is either fully indexed or not searchable at all.
 - **File size limits.** Check the current limits in the Backboard docs. Very large files may need to be split.
 - **Deleting documents.** Use `delete_document(document_id)` to remove. The document is removed from search results immediately.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

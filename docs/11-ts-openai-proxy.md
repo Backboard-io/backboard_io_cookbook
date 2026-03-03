@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 11: OpenAI-Compatible Proxy
 
 > **TypeScript** | **Advanced** | [View Code](../recipes/ts_openai_proxy.ts)
@@ -109,3 +111,5 @@ function buildPromptFromMessages(messages: OpenAIChatMessage[]): string {
 - **Token counts unavailable in streaming.** Backboard reports tokens in `run_ended`, but OpenAI chunk format expects them in the final chunk. The proxy omits them in streaming mode.
 - **Memory mode.** The proxy uses `memory="Auto"` by default. Set to `"Off"` for stateless interactions (e.g. folder-scoped chats in Nash).
 - **Idle timeout.** Nash uses a 1.5s idle timer after the last content token to close the stream, handling cases where `run_ended` is delayed.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

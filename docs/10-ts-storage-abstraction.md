@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 10: Storage Abstraction
 
 > **TypeScript** | **Intermediate** | [View Code](../recipes/ts_storage_abstraction.ts)
@@ -128,3 +130,5 @@ async function findByMetadata(type, key, value, userId?): Promise<StoredItem | u
 - **No transactions.** Delete + create is not atomic. Use write-first pattern (create new, then delete old) for safer updates.
 - **Content is a string.** Always `JSON.stringify()` when storing and `JSON.parse()` when reading.
 - **Singleton state.** The cached `client` and `assistantId` persist for the lifetime of the process. In serverless environments, this resets per invocation.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

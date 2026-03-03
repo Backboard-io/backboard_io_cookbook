@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 12: Per-User Data Isolation
 
 > **TypeScript** | **Advanced** | [View Code](../recipes/ts_per_user_isolation.ts)
@@ -135,3 +137,5 @@ function buildStorableContent(data: Record<string, unknown>): string {
 - **Delete is safe.** The `safeDeleteMemory` pattern ignores 404 errors (memory already deleted). This prevents cascading failures.
 - **Assistant proliferation.** One assistant per user means lots of assistants. This is fine -- Backboard handles it. But track the mapping (user -> assistant_id) carefully.
 - **Shutdown flush.** On process shutdown, pending flushes should be executed synchronously. Otherwise, data written in the last 3 seconds is lost.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

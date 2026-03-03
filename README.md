@@ -97,6 +97,25 @@ Pick a recipe from the table below, read the doc, copy the code.
 | **Tool** | A function the assistant can call; you execute it and return results | `submit_tool_outputs()` |
 | **Run** | An LLM execution triggered by a message; identified by `run_id` | returned in message response |
 
+## AI Editor Integration
+
+This repo includes agent instructions so Cursor and Claude Code know how to write correct Backboard code.
+
+| Editor | File | Scope |
+|--------|------|-------|
+| **Cursor** | `.cursor/skills/backboard-app/SKILL.md` | Auto-loaded when working in this repo |
+| **Claude Code** | `CLAUDE.md` | Auto-loaded when working in this repo |
+
+To use in **any** project, copy the skill to your personal directory:
+
+```bash
+# Cursor
+cp -r .cursor/skills/backboard-app ~/.cursor/skills/
+
+# Claude Code
+cp CLAUDE.md ~/your-project/CLAUDE.md
+```
+
 ## Where These Patterns Come From
 
 Every recipe is extracted from real production code:

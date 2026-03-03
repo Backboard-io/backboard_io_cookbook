@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 7: LLM Data Processor
 
 > **Python** | **Intermediate** | [View Code](../recipes/llm_data_processor.py)
@@ -119,3 +121,5 @@ assistant_id = await get_or_create_assistant(
 - **Model choice matters.** Faster/cheaper models (GPT-4o-mini, Claude Haiku) work well for classification. Use `llm_provider` and `model_name` params to pick.
 - **Batch carefully.** You can classify multiple items in one prompt, but parsing becomes harder. One item per thread is more reliable.
 - **Token costs add up.** Each classification uses tokens. For high-volume pipelines, consider batching or using the cheapest model that works.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

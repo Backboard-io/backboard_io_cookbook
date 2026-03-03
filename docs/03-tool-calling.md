@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 3: Tool-Calling Assistant
 
 > **Python** | **Intermediate** | [View Code](../recipes/tool_calling.py)
@@ -126,3 +128,5 @@ print(response.content)
 - **The loop can run multiple rounds.** The LLM might call tools, get results, then call more tools based on those results. The `while` loop handles this.
 - **Tool errors are tool outputs.** If a tool fails, return a JSON error message as the output. Don't raise an exception -- let the LLM decide how to handle it.
 - **`run_id` is per-round.** Each `submit_tool_outputs()` uses the `run_id` from the response that triggered it.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

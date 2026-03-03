@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 13: Entity-to-Assistant Mapping
 
 > **TypeScript** | **Intermediate** | [View Code](../recipes/ts_agent_sync.ts)
@@ -130,3 +132,5 @@ async function createFolder(params: { folderId, name, shared }): Promise<FolderM
 - **Assistant limits.** Creating many assistants (one per agent/folder) is fine, but be aware of any account-level limits.
 - **Idempotency.** `syncAgentToAssistant()` checks first, creates if missing. Calling it multiple times for the same agent returns the same assistant ID.
 - **Deletion cascade.** When deleting a mapped entity, decide whether to also delete the Backboard assistant. The `deleteAssistant` flag controls this.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

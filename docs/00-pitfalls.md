@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Common Pitfalls
 
 > Read this before you ship. These are the mistakes that break production apps.
@@ -145,3 +147,5 @@ This is worth restating separately because it comes up in a different context: y
 | **Shared folder** (`myapp-folder-{id}`) | Depends | Only if all users in the folder should share context |
 
 In Nash/LibreChat, folder chats explicitly set `memory="Off"` when using a shared assistant to prevent cross-user contamination.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

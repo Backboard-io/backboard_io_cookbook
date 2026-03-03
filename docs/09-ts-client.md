@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 9: Custom HTTP Client
 
 > **TypeScript** | **Intermediate** | [View Code](../recipes/ts_client.ts)
@@ -119,3 +121,5 @@ async *streamMessage(threadId, content, options): AsyncGenerator<BackboardStream
 - **Timeout for streaming is longer.** The recipe uses `timeoutMs * 3` for streaming requests since they can take much longer than regular API calls.
 - **Buffer management.** SSE lines can be split across chunks. The `buffer` pattern accumulates partial lines and processes complete ones.
 - **SyntaxError handling.** Malformed SSE lines are silently skipped. This handles keepalive pings or partial data.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

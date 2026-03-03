@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 6: Multi-Assistant Architecture
 
 > **Python** | **Intermediate** | [View Code](../recipes/multi_assistant.py)
@@ -138,3 +140,5 @@ response = await client.add_message(
 - **Memories don't cross assistants.** A memory on the data assistant is not searchable from the chat assistant's threads. This is a feature (isolation), not a bug.
 - **Assistant IDs must be tracked.** Store them as constants or use `get_or_create_assistant()` to look them up by name.
 - **More assistants = more API calls.** Each assistant is a separate scope. If you need data from multiple assistants, that's multiple `get_memories()` calls.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

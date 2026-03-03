@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 8: Cross-Thread Memory
 
 > **Python** | **Beginner** | [View Code](../recipes/cross_thread_memory.py)
@@ -136,3 +138,5 @@ See [Pitfall 2](00-pitfalls.md#2-memoryauto-is-asynchronous----you-must-await-it
 - **Memory is semantic, not exact.** Backboard stores semantic facts, not raw transcripts. "I'm a Python developer at Acme" might be stored as separate facts about language preference and employer.
 - **Don't use for structured data.** Memory is great for user preferences and context. For structured CRUD (todo lists, game saves), use the Memory as Storage pattern (Recipe 2) with explicit `add_memory()` / `get_memories()`.
 - **Memory + folders.** In Nash/LibreChat, folder chats use `memory="Off"` to keep folder conversations isolated. The proxy switches modes based on context.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>

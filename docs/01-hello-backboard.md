@@ -1,3 +1,5 @@
+<p align="right"><img src="../assets/logo.png" alt="Backboard" height="40"></p>
+
 # Recipe 1: Hello Backboard
 
 > **Python** | **Beginner** | [View Code](../recipes/hello_backboard.py)
@@ -77,3 +79,5 @@ print(response.content)
 - **Assistants are persistent.** Creating one with the same name twice gives you two assistants. Use `get_or_create_assistant()` (the `_common.py` helper) to avoid duplicates.
 - **Threads accumulate.** Each `create_thread()` creates a new conversation. In production, reuse thread IDs for ongoing conversations and create new ones for fresh sessions.
 - **Default model.** If you don't specify `llm_provider` and `model_name` on `add_message()`, the Backboard API picks a default. You can override with e.g. `llm_provider="anthropic"`, `model_name="claude-sonnet-4-20250514"`.
+
+<p align="center"><img src="../assets/brand.png" alt="Backboard.io" width="300"></p>
